@@ -10,7 +10,7 @@ import { db } from "./firebase/config";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AuthProvider>
         <AppProvider>
           <Switch>
